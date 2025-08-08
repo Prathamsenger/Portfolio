@@ -1,21 +1,21 @@
 import { Star, Eye } from "lucide-react";
+import pythonCert from '../assets/python.png';
+import internCert from '../assets/pisoft.jpg';
 
 const CertificationSection = () => {
   const certifications = [
-    {
-      id: 1,
-      image: "src/assets/python.png",
-    },
-    {
-      id: 2,
-      image:
-        "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
-    {
-      id: 3,
-      image:
-        "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=600",
-    },
+   {
+  id: 1,
+  image: pythonCert,
+  
+  
+},
+   {
+  id: 2,
+  image: internCert,
+  
+  
+}
   ];
 
   return (
@@ -44,7 +44,7 @@ const CertificationSection = () => {
               <img
                 src={cert.image}
                 alt={`Certificate ${cert.id}`}
-                className="w-100 h-70 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-100 h-60 object-cover hover:scale-105 transition-transform duration-300"
               />
 
               {/* View button */}
@@ -53,13 +53,16 @@ const CertificationSection = () => {
                   href={cert.image}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition"
+                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition "
                 >
                   <Eye className="w-4 h-4 mr-2" />
                   View Certificate
                 </a>
+            
               </div>
+             
             </div>
+            
           ))}
         </div>
 

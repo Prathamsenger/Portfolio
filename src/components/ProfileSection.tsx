@@ -1,4 +1,7 @@
 import { MapPin, Mail, Phone, Github, Linkedin, Download,  } from 'lucide-react';
+import profileImg from '../assets/new-image.webp'; // ✅ Import the image
+
+
 
 const ProfileSection = () => {
   return (
@@ -11,7 +14,7 @@ const ProfileSection = () => {
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1 shadow-2xl">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
-                    src="src/assets/new-image.webp"
+                    src={profileImg}
                     alt="Profile"
                     className="w-full h-full object-cover"
                   />
